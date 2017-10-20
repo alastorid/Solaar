@@ -7,9 +7,9 @@ autostart_path = '/etc/xdg/autostart'
 
 import sys
 backup_path_0 = sys.path[0]
-sys.path[0] = backup_path_0 + '/lib'
+#sys.path[0] = backup_path_0 + '/lib'
 from solaar import NAME, __version__
-sys.path[0] = backup_path_0
+#sys.path[0] = backup_path_0
 
 if 'install' in sys.argv:
 	# naively guess where the autostart .desktop file should be installed
